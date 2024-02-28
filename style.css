@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #0c0e0c;
+}
+
+@font-face {
+  font-family: "Alexi";
+  src: url("../images/65d97622a0cf4509f3745e6d_alexi.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "7 The";
+  src: url("../images/65d95341681990b6ac6c60fb_7the.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.navbar {
+  background-color: #131513;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  border-bottom: 2px #eb570d solid;
+}
+
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar ul.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar ul.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  font-family: Bitter, sans-serif;
+  font-size: 1.05rem;
+}
+
+.navbar ul.nav-links li.more:hover .dropdown {
+  display: block;
+}
+
+ul.nav-links .signup-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 20px;
+  padding: 15px 25px !important;
+}
+
+ul.nav-links .signup-btn:hover {
+  cursor: pointer;
+  background-color: #f2b354;
+}
+
+.nav-link-three {
+  margin-right: 3rem;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/rc-dual-img.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-family: Alexi, sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  line-height: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  font-family: Bitter, sans-serif;
+  font-weight: 600;
+}
+
+.button {
+  font-family: Bitter, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  padding: 17px 25px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary {
+  background-color: #ff6600;
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.card-section {
+  background: url("background.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 40px 150px;
+  margin-top: 6rem;
+  font-family: Alexi, sans-serif;
+}
+
+.card-title-content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.card-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  line-height: 3.5rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex-basis: calc(33.333% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  background: none;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ea5d17;
+}
+
+.card h3 {
+  margin: 20px 0;
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+  line-height: 2rem;
+  font-family: Bitter, sans-serif;
+}
+
+.card p {
+  margin-bottom: 20px;
+  font-family: Bitter, sans-serif;
+  color: #929292;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  font-size: 1.3rem;
+  color: #e40c0c;
+}
+
+.btn span {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.btn:hover span {
+  transform: translateX(5px);
+}
+
+.btn:hover {
+  background-color: darkorange;
+}
+
+.rc-duels-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.rc-duels-image {
+  max-width: 100%;
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+.rc-duels-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rc-duels-content h2 {
+  font-family: Alexi, sans-serif;
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  line-height: 2.5rem;
+  width: 800px;
+  margin-bottom: 3rem;
+}
+
+.rc-duels-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.rc-duels-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: Bitter, sans-serif;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: #929292;
+}
+
+.rc-duels-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.rc-duels-button:hover {
+  background-color: #f6121d;
+}
+
+.btn-video {
+  font-family: "7 The", sans-serif;
+  font-size: 0.8rem;
+  margin-right: 4rem;
+}
