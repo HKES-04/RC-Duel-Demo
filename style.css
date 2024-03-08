@@ -237,7 +237,7 @@ ul.nav-links .signup-btn:hover {
   color: white;
   padding: 20px;
   width: 85%;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 .rc-duels-image {
@@ -293,4 +293,144 @@ ul.nav-links .signup-btn:hover {
   font-family: "7 The", sans-serif;
   font-size: 0.8rem;
   margin-right: 4rem;
+}
+
+.demo {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/rc-demo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.demo-content {
+  width: 100%;
+  text-align: center;
+}
+
+.demo-content h1 {
+  font-family: Alexi, sans-serif;
+  font-size: 3.5rem;
+  color: #fff;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+}
+
+.demo-content h3 {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 1.3em;
+  letter-spacing: 1.5px;
+  line-height: 2rem;
+  font-family: Bitter, sans-serif;
+  color: rgb(226, 226, 226);
+}
+
+.countdown-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.countdown-timer-link {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #ea5d17;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.countdown-timer-link:hover {
+  background-color: #e50914;
+}
+
+.footer {
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: -3rem;
+}
+
+.footer-logo-container img {
+  width: 8rem;
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  color: #ea5d17;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icon i {
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover i {
+  transform: scale(1.1);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.company-links,
+.rc-duels-links {
+  margin-right: 15rem;
+}
+
+.company-links h3,
+.rc-duels-links h3 {
+  font-family: Bitter, sans-serif;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.company-links ul,
+.rc-duels-links ul {
+  list-style-type: none;
+}
+
+.company-links ul li a,
+.rc-duels-links ul li a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  display: block;
+  transition: color 0.3s ease;
+  font-family: Alexi, sans-serif;
+}
+
+.company-links ul li a:hover,
+.rc-duels-links ul li a:hover {
+  color: #ffa500;
 }
